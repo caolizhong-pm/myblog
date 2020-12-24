@@ -85,10 +85,10 @@ WSGI_APPLICATION = 'myblog.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'myblog',
-        'USER':'root',
-        'PASSWORD': '******',  # 请换成自己的密码
-        'HOST': '127.0.0.1',   # 如果不能连接，改成localhost试下
+        'NAME': 'mysql_db_name',
+        'USER': 'mysql_user',
+        'PASSWORD': 'mysql_password',
+        'HOST': 'mysql_host',
         'POST': '3306',
     }
 }
