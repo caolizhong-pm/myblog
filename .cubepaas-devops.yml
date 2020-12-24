@@ -9,11 +9,6 @@ stages:
       shellScript: |-
         pwd
         ls
-    env:
-      MYSQL_DB_NAME: myblog
-      MYSQL_HOST: mysql-service
-      MYSQL_PASSWORD: root
-      MYSQL_USER: root
 - name: build image
   steps:
   - publishImageConfig:
