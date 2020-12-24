@@ -1,8 +1,8 @@
 #/bin/bash -e
 
-AppRoot=/myblog
+AppRoot=/opt/app-root/src
 
-cd $AppRoot
+cd $AppRoot/myblog
 
 # fix you mysql database
 sed -i 's/mysql_host/'"$MYSQL_HOST"'/g' ./myblog/settings.py
