@@ -13,12 +13,13 @@ stages:
 - name: deploy mysql
   steps:
   - applyAppConfig:
-      catalogTemplate: cube-global-data:library-mysql
+      catalogTemplate: p-wgff4:mylibrary-mysql
       version: 1.3.1
       answers:
         mysqlDatabase: myblog
+        mysqlPassword: admin
         mysqlRootPassword: root
-        mysqlUser: root
+        mysqlUser: admin
       name: mysql-service
       targetNamespace: p-wgff4-pipeline
 timeout: 60
