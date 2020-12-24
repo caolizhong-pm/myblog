@@ -5,7 +5,7 @@ stages:
 - name: env
   steps:
   - runScriptConfig:
-      image: registry.cn-hangzhou.aliyuncs.com/link-cloud/python-27-hcaas:v1.0.1
+      image: link-cloud/python-27-hcaas:v1.0.1
       shellScript: |-
         pwd
         ls
