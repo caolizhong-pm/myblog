@@ -1,4 +1,4 @@
-FROM registry.cn-hangzhou.aliyuncs.com/link-cloud/python-27-hcaas:v1.0.1
+FROM registry.cn-hangzhou.aliyuncs.com/link-cloud/python-36-hcaas:v1.0.1
 ENV MYSQL_DB_NAME myblog
 ENV MYSQL_HOST mysql-service
 ENV MYSQL_PASSWORD root
