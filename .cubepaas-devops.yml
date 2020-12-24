@@ -2,13 +2,6 @@ stages:
 - name: Clone
   steps:
   - sourceCodeConfig: {}
-- name: env
-  steps:
-  - runScriptConfig:
-      image: link-cloud/python-27-hcaas:v1.0.1
-      shellScript: |-
-        pwd
-        ls
 - name: build image
   steps:
   - publishImageConfig:
@@ -24,7 +17,7 @@ stages:
       version: 1.3.1
       answers:
         mysqlDatabase: myblog
-        mysqlPassword: root
+        mysqlRootPassword: root
         mysqlUser: root
       name: mysql-service
       targetNamespace: p-wgff4-pipeline
