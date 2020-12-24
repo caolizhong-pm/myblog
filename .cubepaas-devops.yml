@@ -1,0 +1,14 @@
+stages:
+- name: Clone
+  steps:
+  - sourceCodeConfig: {}
+- name: b
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: xyz:v1
+      pushRemote: true
+      registry: mirror.cubepaas.com/github-clz
+timeout: 60
+notification: {}
