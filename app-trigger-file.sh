@@ -1,4 +1,4 @@
-#/bin/bash -e
+#!/bin/bash -e
 
 AppRoot=/opt/app-root/src
 
