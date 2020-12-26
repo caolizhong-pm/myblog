@@ -10,7 +10,7 @@ stages:
       tag: xyz:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: mirror.cubepaas.com/github-clz
-- name: deploy mysql
+- name: mysql
   steps:
   - applyAppConfig:
       catalogTemplate: p-wgff4:mylibrary-mysql
@@ -22,5 +22,9 @@ stages:
         mysqlUser: admin
       name: mysql-service
       targetNamespace: p-wgff4-pipeline
+- name: web
+  steps:
+  - applyYamlConfig:
+      path: ./deployment.yaml
 timeout: 60
 notification: {}
