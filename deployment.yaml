@@ -36,8 +36,8 @@ spec:
       #  - bash
       #  - -c
       #  - /opt/app-root/src/app-trigger-file.sh
-        #image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
-        image: mirror.cubepaas.com/github-clz/xyz:31
+        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+        #image: mirror.cubepaas.com/github-clz/xyz:31
         imagePullPolicy: Always
         name: myblog
         ports:
