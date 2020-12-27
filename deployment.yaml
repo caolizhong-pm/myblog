@@ -36,13 +36,13 @@ spec:
       #  - bash
       #  - -c
       #  - /opt/app-root/src/app-trigger-file.sh
-        image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
+      - image: ${CICD_IMAGE}:${CICD_EXECUTION_SEQUENCE}
         #image: mirror.cubepaas.com/github-clz/xyz:31
         imagePullPolicy: Always
         name: myblog
         ports:
         - containerPort: 8000
-          name: 8000tcp80003
+          #name: 8000tcp80003
           protocol: TCP
         resources:
           limits:
