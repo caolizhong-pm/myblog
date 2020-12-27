@@ -7,7 +7,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: xyz:${CICD_EXECUTION_SEQUENCE}
+      tag: myblog:${CICD_EXECUTION_SEQUENCE}
       pushRemote: true
       registry: mirror.cubepaas.com/github-clz
 - name: mysql
